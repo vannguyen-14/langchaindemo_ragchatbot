@@ -1,0 +1,8 @@
+flask
+werkzeug
+python-docx  # Để đọc file docx
+PyPDF2      # Để đọc file PDF
+pinecone-client
+langchain
+google-generativeai
+keybert
