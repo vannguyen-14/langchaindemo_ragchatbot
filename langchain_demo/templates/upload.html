@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Upload Tài liệu</h2>
+<form method="post" enctype="multipart/form-data" class="mt-4">
+    <div class="mb-3">
+        <label for="file" class="form-label">Chọn file (PDF, DOCX, TXT)</label>
+        <input type="file" class="form-control" id="file" name="file" multiple accept=".pdf,.docx,.txt" required>
+        <div class="form-text">Có thể chọn nhiều file. Kích thước tối đa mỗi file: 16MB</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+<div class="mt-4">
+    <h4>Định dạng được hỗ trợ:</h4>
+    <ul>
+        <li>PDF (.pdf)</li>
+        <li>Microsoft Word (.docx)</li>
+        <li>Text (.txt)</li>
+    </ul>
+</div>
+{% endblock %}

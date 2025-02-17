@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Chào mừng!</h1>
+    <p class="lead">Hệ thống quản lý tài liệu tuyển sinh thông minh.</p>
+    <hr class="my-4">
+    <p>Bạn có thể upload tài liệu mới hoặc xem danh sách tài liệu hiện có.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('upload') }}" role="button">Upload Tài liệu</a>
+    <a class="btn btn-secondary btn-lg" href="{{ url_for('documents') }}" role="button">Xem Tài liệu</a>
+</div>
+{% endblock %}
